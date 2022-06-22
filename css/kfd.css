@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font:14px "微软雅黑";
+    background-color: #fff;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style:none;
+}
+.wrap{
+    width:980px;
+    margin:25px auto;
+    position:relative;
+}
+header{
+    position:relative;
+    width:100%;
+    height:99px;
+    background: #fff url(../images/cofe-1_01.jpg) repeat-x ;
+    overflow:hidden;
+}
+header>.logo{
+    width:225px;
+    height:64px;
+    float:left;
+}
+header>.logo>img{
+    overflow: hidden;
+    width:225px;
+    height:64px;
+    border:0;
+    margin-top:6px;
+}
+header>.header-nav{
+    background-color: #fff;
+    width:383px;
+    float:left;
+}
+header>.header-sitemap{
+    float:right;
+    margin-right:6px;
+    background-color: #000;
+    border-radius: 4px;
+}
+header>.header-sitemap>ul>li{
+    float:left;
+}
+header>.header-sitemap>ul>li>a{
+    display:block;
+    padding:4px 10px;
+    color:#fff;
+    text-decoration: none;
+}
+.search{
+    position:absolute;
+    top:52px;
+    left:260px;
+}
+.search input[type=search]{
+    background:#fff url(../images/search.jpg) no-repeat 9px center;
+    border:1px solid #ccc;
+    padding:9px 10px 9px 32px;
+    width:500px;
+    border-radius: 10em;
+}
+.search input[type=submit]{
+    position:relative;
+    left:-57px;
+    top:2px;
+    background-color: red;
+    border:none;
+    font-size:18px;
+    padding:4px 8px 5px;
+    border-top-right-radius: 10em;
+    border-bottom-right-radius: 10em;
+}
+.carousel{
+    position:relative;
+    width:980px;
+    height:405px;
+}
+.carousel-inner{
+    position:relative;
+    width:100%;
+    overflow: hidden;
+}
+.carousel-inner>.img-item{
+    display:none;
+    position:relative;
+}
+.carousel-inner>.active{
+    display:block;
+    left:0;
+}
+.carousel-inner>.img-item>img{
+    width:980px;
+    height:405px;
+    border:0;
+}
+.img-item-caption{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:40px;
+    text-align:center;
+    font:16px "华文楷体";
+    color: #000;
+    font-weight:bold;
+    text-shadow: 0 1px 2px rgba(255,255,255,0.6);
+}
+.carousel-indicators{
+    position:absolute;
+    left:50%;
+    width:60%;
+    margin-left:-30%;
+    bottom:10px;
+    text-align:center;
+    list-style:none;
+}
+.carousel-indicators>li{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    padding:1px;
+    background-color: #000;
+    border-radius: 10px;
+    border:1px solid #fff;
+}
+.carousel-indicators>.active{
+    width:12px;
+    height:12px;
+    margin:0;
+    background-color: red;
+}
+.carousel-control{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    width:15%;
+    font-size:64px;
+    color:#fff;
+    text-align:center;
+    background-color: #999;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+.carousel-control.left{
+    left:0;
+    right:auto;
+}
+.carousel-control.right{
+    right:0;
+    left:auto;
+}
+a.carousel-control{
+    line-height:405px;
+    text-decoration: none;
+}
+.menu{
+    position:relative;  /* 绝对定位的参照对象  */
+    width:980px;
+    height:60px;
+    background-color: #666;
+    background-image: linear-gradient(#666,#444);
+}
+.menu>.nav{
+    position:relative;  /* 绝对定位的参照对象  */
+    top:0;
+    padding-left:50px;
+    height:58px;
+    line-height: 58px;
+    border-top:1px solid #999;
+    border-bottom:1px solid #999;
+}
+.menu>.nav:hover{
+    background-color: rgb(53,58,66);
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+.menu-item{
+    position:relative;
+    display:inline-block;
+    margin-right:10px;
+    padding-top:1px;
+    height:58px;
+    width:140px;
+}
+.menu-item>a{
+    display:block;
+    height:57px;
+    text-align:center;
+    color:#fff;
+    border-bottom:3px solid transparent;
+}
+.menu-item>a:hover{
+    color:rgb(0,189,213);
+    border-bottom: 3px solid rgba(0,189,218,1);
+}
+.sub-menu{
+    visibility: hidden;   /* 隐藏，依然存在于页面中  */
+    opacity: 0;
+    position:absolute;
+    top:59px;
+    width:140px;
+    left:50%;
+    margin-left:-70px;
+    background-color: #666;
+    background-image: linear-gradient(rgb(53,58,66),#666);
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    z-index:1000;
+}
+.menu-item:hover>.sub-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.menu-item>.sub-menu li>a{
+    display:block;
+    color:#bbb;
+    height:36px;
+    line-height:36px;
+    text-align:center;
+}
+.sub-menu li>a:hover{
+    position:relative;
+    color:#fff;
+    font-weight:bold;
+}
+.sub-menu li>a:hover:before,
+.sub-menu li>a:hover:after{
+    display:inline-block;
+    position:relative;
+    content:"";
+    width:0;
+    height:0;
+    top:2px;
+    border:8px solid transparent;
+}
+.sub-menu li>a:hover:before{
+    border-left-color: #fff;
+}
+.sub-menu li>a:hover:after{
+    border-right-color: #fff;
+}
+.main{
+    width:980px;
+    height:435px;
+    position:relative;
+    overflow: hidden;
+}
+.background{
+    width:980px;
+    height:435px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index:-1;
+    font-size:0;
+}
+.main>.member{
+    width:85px;
+    height:25px;
+    padding:90px 50px;
+}
+.main>.member>p{
+    width:85px;
+    height:25px;
+    margin-bottom:5px;
+    background:url("../images/login.png") ;
+}
+.main>.member>p>a{
+    display:block;
+    width:85px;
+    height:25px;
+    line-height:25px;
+    text-align:center;
+    text-decoration: none;
+    color:#000;
+}
+.main>.member>p>a:hover{
+    background:url("../images/login1.png") ;
+}
+.main>.tabs{
+    width:198px;
+    position:absolute;
+    top:15px;
+    right:120px;
+}
+.main>.tabs>.tabs-label{
+    border-bottom:3px solid #ff8726;
+}
+.main>.tabs>.tabs-label>li{
+    display:inline-block;
+    width:62px;
+    height:24px;
+    background:url("../images/ye2.png") no-repeat;
+    line-height:24px;
+    text-align:center;
+    color:#000;
+}
+.main>.tabs>.tabs-label>.active{
+    background:url("../images/ye.png") no-repeat;
+    color:#fff;
+}
+.main>.tabs>.tabs-content>.tabs-pane{
+    display:none;
+}
+.main>.tabs>.tabs-content>.active{
+    display:block;
+}
+.main>.tabs>.tabs-content>.tabs-pane>ul>li{
+    height:24px;
+    border-bottom:1px solid gold;
+    list-style-position: inside;
+    list-style-image: url(../images/news.png);
+}
+.main>.tabs>.tabs-content>.tabs-pane>ul>li:hover{
+    list-style-image: url(../images/news1.png);
+}
+
+.main>.tabs>.tabs-content>.tabs-pane>ul>li>a{
+    display:inline-block;
+    height:23px;
+    line-height:23px;
+    text-decoration: none;
+    color:#000;
+    padding-left:8px;
+}
+.main>.tabs>.tabs-content>.tabs-pane>ul>li>a:hover{
+    color:#fff;
+}
+.main>.product{
+    width:198px;
+    position:absolute;
+    right:120px;
+    top:150px;
+}
+.main>.product>h3{
+    font-size:13px;
+}
+.product-list{
+    width:100%;
+    overflow: hidden;
+}
+.product-list>.list-caption{
+    font-size:20px;
+    color: #ff9a72;
+    font-weight:bold;
+    padding:10px 0;
+}
+.product-list>.list-item{
+    box-sizing: border-box;
+    width:196px;
+    height:248px;
+    padding:22px 22px 0 22px;
+    border-top:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    float:left;
+}
+.product-list>.list-item>img{
+    display:block;
+    width:150px;
+    height:100px;
+}
+.product-list>.list-item>.product-title{
+    padding-top:8px;
+    font-size:14px;
+    color:black;
+}
+.product-list>.list-item>p{
+    padding:3px 2px;
+    font-size:12px;
+    color:#bbb;
+}
+.product-list>.list-item>p>.s-price{
+    font-size:16px;
+    color:red;
+}
+.product-list>.list-item>p>.y-price{
+    text-decoration: line-through;
+}
+.product-list>div:nth-of-type(2){
+    border-left:1px solid #ddd;
+}
+.product-list>.list-item:hover{
+    border:1px solid red;
+}
+footer{
+    width:980px;
+    background: #fff url(../images/cofe-1_05.jpg) repeat-x;
+    margin-top:10px;
+    padding:12px;
+    position:relative;
+    box-sizing: border-box;
+}
+
+footer>.footer-sitemap{
+    position:absolute;
+    top:-2px;
+    right:0;
+
+}
+footer>.footer-sitemap>ul>li{
+    display:inline-block;
+    margin-left:5px;
+
+}
+footer>.footer-sitemap>ul>li>a{
+    display:block;
+    border-right:1px solid #000;
+    padding-right:8px;
+}
+footer>.footer-sitemap>ul>li:last-child>a{
+    padding-right: 0;
+    border-right:0;
+}
+footer>.right-copy{
+    position:absolute;
+    right:0;
+    top:30px;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>咖啡店购物车</title>
+    <link rel="stylesheet" href="css/common.css" >
+    <link rel="stylesheet" href="css/cart.css" >
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="咖啡店">
+        </div>
+        <div class="header-nav">
+            <a href="#"><img src="images/dh01.jpg" alt="关于黑咖啡"></a>
+            <a href="#"><img src="images/dh02.jpg" alt="常见问题"></a>
+            <a href="#"><img src="images/dh03.jpg" alt="黑咖啡俱乐部"></a>
+            <a href="#"><img src="images/dh04.jpg" alt="加入我们"></a>
+            <a href="#"><img src="images/dh05.jpg" alt="联系我们"></a>
+        </div>
+        <div class="header-sitemap">
+            <ul>
+                <li><a href="#">返回首页</a></li>
+                <li><a href="#">网站地图</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <form action="" method="post">
+                <input type="search" name="txt-search" placeholder="蓝山咖啡">
+                <input type="submit" value="搜索">
+            </form>
+        </div>
+    </header>
+    <!-- 产品导航菜单 -->
+    <div class="menu">
+        <ul class="nav">   <!--  导航 -->
+            <li class="menu-item"><a href="#">意大利咖啡</a>  <!--一级菜单 -->
+                <div class="sub-menu">
+                    <ul>                   <!--二级菜单 -->
+                        <li>
+                            <a href="#">卡布奇诺</a>
+                            <a href="#">拿铁</a>
+                            <a href="#">克烈特</a>
+                            <a href="#">力士烈特</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item"><a href="#">美式咖啡</a>  <!--一级菜单 -->
+                <div class="sub-menu">
+                    <ul>                   <!--二级菜单 -->
+                        <li>
+                            <a href="#">美式拿铁</a>
+                            <a href="#">夏威夷咖啡</a>
+                            <a href="#">速溶咖啡</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item"><a href="#">法国咖啡</a>  <!--一级菜单 -->
+                <div class="sub-menu">
+                    <ul>                   <!--二级菜单 -->
+                        <li>
+                            <a href="#">欧蕾咖啡</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item"><a href="#">奥地利咖啡</a>  <!--一级菜单 -->
+                <div class="sub-menu">
+                    <ul>                   <!--二级菜单 -->
+                        <li>
+                            <a href="#">维也纳咖啡</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item"><a href="#">单品咖啡</a>  <!--一级菜单 -->
+                <div class="sub-menu">
+                    <ul>                   <!--二级菜单 -->
+                        <li>
+                            <a href="#">蓝山咖啡</a>
+                            <a href="#">巴西咖啡</a>
+                            <a href="#">哥伦比亚咖啡</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="location">
+        <span class="icon"></span>你现在的位置：
+        <a href="#">黑咖啡</a>&gt;
+        <a class="current-a" href="#">购物车</a>
+    </div>
+    <div class="cart">
+        <form action="" method="post">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>商品信息</th>
+                        <th>单价</th>
+                        <th>数量</th>
+                        <th>金额</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="checkbox">
+                            <img src="images/kf_images/bx巴西咖啡.jpg">
+                            <h3>巴西咖啡</h3>
+                        </td>
+                        <td class="price">¥58.99</td>
+                        <td class="number"><input type="number" name="number" value="1"></td>
+                        <td class="amount">¥58.99</td>
+                        <td><a href="">删除</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="checkbox">
+                            <img src="images/kf_images/bx巴西咖啡.jpg">
+                            <h3>巴西咖啡</h3>
+                        </td>
+                        <td class="price">¥58.99</td>
+                        <td class="number"><input type="number" name="number" value="1"></td>
+                        <td class="amount">¥58.99</td>
+                        <td><a href="">删除</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="checkbox">
+                            <img src="images/kf_images/bx巴西咖啡.jpg">
+                            <h3>巴西咖啡</h3>
+                        </td>
+                        <td class="price">¥58.99</td>
+                        <td class="number"><input type="number" name="number" value="1"></td>
+                        <td class="amount">¥58.99</td>
+                        <td><a href="">删除</a></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="all-checkbox">全选
+                            <a href="">删除</a>
+                            <a href="">清除失效的商品</a>
+                        </td>
+                        <td>已选商品<span>0</span>件</td>
+                        <td colspan="2">合计(不含运费):<span>0.00</span></td>
+                        <td class="balance">
+                            <input type="submit" value="结算">
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-logo">
+            <img src="images/foot-logo.jpg" alt="页脚logo">
+        </div>
+        <div class="footer-sitemap">
+            <ul>
+                <li><a href="#">黑咖啡店</a></li>
+                <li><a href="#">网站地图</a></li>
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">使用条款</a></li>
+                <li><a href="#">隐私保护</a></li>
+            </ul>
+        </div>
+        <div class="right-copy">
+            版权所有&copy;2018 黑咖啡中国 广ICP备 150201898号
+        </div>
+    </footer>
+</div>
+</body>
+</html>

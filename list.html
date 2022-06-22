@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>咖啡店产品列表</title>
+    <link rel="stylesheet" href="css/common.css" >
+    <link rel="stylesheet" href="css/index.css" >
+    <link rel="stylesheet" href="css/page.css" >
+    <script src="js/kfd.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="咖啡店">
+        </div>
+        <div class="header-nav">
+            <a href="#"><img src="images/dh01.jpg" alt="关于黑咖啡"></a>
+            <a href="#"><img src="images/dh02.jpg" alt="常见问题"></a>
+            <a href="#"><img src="images/dh03.jpg" alt="黑咖啡俱乐部"></a>
+            <a href="#"><img src="images/dh04.jpg" alt="加入我们"></a>
+            <a href="#"><img src="images/dh05.jpg" alt="联系我们"></a>
+        </div>
+        <div class="header-sitemap">
+            <ul>
+                <li><a href="#">返回首页</a></li>
+                <li><a href="#">网站地图</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <form action="" method="post">
+                <input type="search" name="txt-search" placeholder="蓝山咖啡">
+                <input type="submit" value="搜索">
+            </form>
+        </div>
+    </header>
+    <!-- 产品导航菜单 -->
+    <div class="menu">
+        <ul class="nav">   <!--  导航 -->
+            <li class="menu-item"><a href="#">意大利咖啡</a>  <!--一级菜单 -->
+                <div class="sub-menu">
+                    <ul>                   <!--二级菜单 -->
+                        <li>
+                            <a href="#">卡布奇诺</a>
+                            <a href="#">拿铁</a>
+                            <a href="#">克烈特</a>
+                            <a href="#">力士烈特</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item"><a href="#">美式咖啡</a>  <!--一级菜单 -->
+                <div class="sub-menu">
+                    <ul>                   <!--二级菜单 -->
+                        <li>
+                            <a href="#">美式拿铁</a>
+                            <a href="#">夏威夷咖啡</a>
+                            <a href="#">速溶咖啡</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item"><a href="#">法国咖啡</a>  <!--一级菜单 -->
+                <div class="sub-menu">
+                    <ul>                   <!--二级菜单 -->
+                        <li>
+                            <a href="#">欧蕾咖啡</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item"><a href="#">奥地利咖啡</a>  <!--一级菜单 -->
+                <div class="sub-menu">
+                    <ul>                   <!--二级菜单 -->
+                        <li>
+                            <a href="#">维也纳咖啡</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item"><a href="#">单品咖啡</a>  <!--一级菜单 -->
+                <div class="sub-menu">
+                    <ul>                   <!--二级菜单 -->
+                        <li>
+                            <a href="#">蓝山咖啡</a>
+                            <a href="#">巴西咖啡</a>
+                            <a href="#">哥伦比亚咖啡</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="carousel" id="carousel">  <!-- 轮播图-->
+        <!--轮播图片容器-->
+        <div class="carousel-inner">
+            <div class="img-item">
+                <img src="images/carousel/coffee_01.jpg" alt="">
+                <div class="img-item-caption">品味生活</div>
+            </div>
+            <div class="img-item">
+                <img src="images/carousel/coffee_02.jpg" alt="">
+                <div class="img-item-caption">品味生活</div>
+            </div>
+            <div class="img-item">
+                <img src="images/carousel/coffee_03.jpg" alt="">
+                <div class="img-item-caption">品味生活</div>
+            </div>
+            <div class="img-item">
+                <img src="images/carousel/coffee_04.jpg" alt="">
+                <div class="img-item-caption">品味生活</div>
+            </div>
+            <div class="img-item">
+                <img src="images/carousel/coffee_05.jpg" alt="">
+                <div class="img-item-caption">品味生活</div>
+            </div>
+            <div class="img-item">
+                <img src="images/carousel/coffee_06.jpg" alt="">
+                <div class="img-item-caption">品味生活</div>
+            </div>
+        </div>
+        <!--轮播图指示器-->
+        <ol class="carousel-indicators">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        <!--轮播图导航，左右控制按钮-->
+        <a class="carousel-control left" href="#carousel">&lsaquo;</a>
+        <a class="carousel-control right" href="#carousel">&rsaquo;</a>
+    </div>
+    <!--产品分类列表 -->
+    <div class="product-list">
+        <h2 class="list-caption">|&nbsp;德国咖啡</h2>
+        <div class="list-item">
+            <img src="images/small/bx巴西咖啡.jpg" alt="巴西咖啡">
+            <p class="product-title">香浓蒸汽泡沫牛奶咖啡</p>
+            <p>评价:0 &nbsp;&nbsp;收藏:123</p>
+            <p><span class="s-price">¥58.99</span><span class="y-price">¥88.98</span></p>
+            <p><span class='sales'>月销133杯</span></p>
+        </div>
+        <div class="list-item">
+            <img src="images/small/bx巴西咖啡.jpg" alt="巴西咖啡">
+            <p class="product-title">香浓蒸汽泡沫牛奶咖啡</p>
+            <p>评价:0 &nbsp;&nbsp;收藏:123</p>
+            <p><span class="s-price">¥58.99</span><span class="y-price">¥88.98</span></p>
+            <p><span class='sales'>月销133杯</span></p>
+        </div>
+        <div class="list-item">
+            <img src="images/small/bx巴西咖啡.jpg" alt="巴西咖啡">
+            <p class="product-title">香浓蒸汽泡沫牛奶咖啡</p>
+            <p>评价:0 &nbsp;&nbsp;收藏:123</p>
+            <p><span class="s-price">¥58.99</span><span class="y-price">¥88.98</span></p>
+            <p><span class='sales'>月销133杯</span></p>
+        </div>
+        <div class="list-item">
+            <img src="images/small/bx巴西咖啡.jpg" alt="巴西咖啡">
+            <p class="product-title">香浓蒸汽泡沫牛奶咖啡</p>
+            <p>评价:0 &nbsp;&nbsp;收藏:123</p>
+            <p><span class="s-price">¥58.99</span><span class="y-price">¥88.98</span></p>
+            <p><span class='sales'>月销133杯</span></p>
+        </div>
+        <div class="list-item">
+            <img src="images/small/bx巴西咖啡.jpg" alt="巴西咖啡">
+            <p class="product-title">香浓蒸汽泡沫牛奶咖啡</p>
+            <p>评价:0 &nbsp;&nbsp;收藏:123</p>
+            <p><span class="s-price">¥58.99</span><span class="y-price">¥88.98</span></p>
+            <p><span class='sales'>月销133杯</span></p>
+        </div>
+        <div class="list-item">
+            <img src="images/small/bx巴西咖啡.jpg" alt="巴西咖啡">
+            <p class="product-title">香浓蒸汽泡沫牛奶咖啡</p>
+            <p>评价:0 &nbsp;&nbsp;收藏:123</p>
+            <p><span class="s-price">¥58.99</span><span class="y-price">¥88.98</span></p>
+            <p><span class='sales'>月销133杯</span></p>
+        </div>
+        <div class="list-item">
+            <img src="images/small/bx巴西咖啡.jpg" alt="巴西咖啡">
+            <p class="product-title">香浓蒸汽泡沫牛奶咖啡</p>
+            <p>评价:0 &nbsp;&nbsp;收藏:123</p>
+            <p><span class="s-price">¥58.99</span><span class="y-price">¥88.98</span></p>
+            <p><span class='sales'>月销133杯</span></p>
+        </div>
+        <div class="list-item">
+            <img src="images/small/bx巴西咖啡.jpg" alt="巴西咖啡">
+            <p class="product-title">香浓蒸汽泡沫牛奶咖啡</p>
+            <p>评价:0 &nbsp;&nbsp;收藏:123</p>
+            <p><span class="s-price">¥58.99</span><span class="y-price">¥88.98</span></p>
+            <p><span class='sales'>月销133杯</span></p>
+        </div>
+        <div class="list-item">
+            <img src="images/small/bx巴西咖啡.jpg" alt="巴西咖啡">
+            <p class="product-title">香浓蒸汽泡沫牛奶咖啡</p>
+            <p>评价:0 &nbsp;&nbsp;收藏:123</p>
+            <p><span class="s-price">¥58.99</span><span class="y-price">¥88.98</span></p>
+            <p><span class='sales'>月销133杯</span></p>
+        </div>
+        <div class="list-item">
+            <img src="images/small/bx巴西咖啡.jpg" alt="巴西咖啡">
+            <p class="product-title">香浓蒸汽泡沫牛奶咖啡</p>
+            <p>评价:0 &nbsp;&nbsp;收藏:123</p>
+            <p><span class="s-price">¥58.99</span><span class="y-price">¥88.98</span></p>
+            <p><span class='sales'>月销133杯</span></p>
+        </div>
+    </div>
+    <div class="page">
+        <a href="#">&lt;上一页</a>
+        <a herf="#" class="number active">1</a>
+        <a herf="#" class="number">2</a>
+        <a herf="#" class="number">3</a>
+        <a href="#">下一页&gt;</a>
+        <span>共 3 页</span>
+    </div>
+    <footer>
+        <div class="footer-logo">
+            <img src="images/foot-logo.jpg" alt="页脚logo">
+        </div>
+        <div class="footer-sitemap">
+            <ul>
+                <li><a href="#">黑咖啡店</a></li>
+                <li><a href="#">网站地图</a></li>
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">使用条款</a></li>
+                <li><a href="#">隐私保护</a></li>
+            </ul>
+        </div>
+        <div class="right-copy">
+            版权所有&copy;2018 黑咖啡中国 广ICP备 150201898号
+        </div>
+    </footer>
+</div>
+</body>
+</html>
